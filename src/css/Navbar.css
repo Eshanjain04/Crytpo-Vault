@@ -1,0 +1,113 @@
+.navbar-container{
+    border: 1px solid rgb(148, 147, 147);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(161, 159, 159);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.navbar-container .main-heading h1{
+    font-size: 20px;
+}
+
+.signin{
+    padding: 1rem;
+}
+
+.signin:hover{
+    color: steelblue;
+}
+
+.signup{
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: steelblue;
+    color: white;
+    font-weight: 500;
+    margin-left: 5px;
+    box-shadow: 1px rgb(146, 144, 144);
+}
+
+.menu-icon, .mobile-menu-show, .mobile-menu-hide{
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+    .toggleTheme, .signup-and-signin{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+        margin-right: 20px;
+    }
+
+    .mobile-menu-show{
+        position: fixed;
+        left: 0px;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+        z-index: 10;
+    } 
+
+    .mobile-menu-hide{
+        position: fixed;
+        left: -100%;
+        top:80px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .mobile-menu-show ul{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .mobile-menu-show ul li{
+        border-bottom: 0.5px solid rgb(212, 210, 210);
+        padding-top: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .mobile-signin-and-signup{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 50px;
+        gap: 20px;
+        
+    }
+
+    .mobile-signin, .mobile-signup{
+        padding: 1.2rem;
+        box-shadow: 1px 1px rgb(109, 109, 109);
+        border-radius: 20px;
+        font-weight: 400;
+        color: inherit;
+    }
+
+    .mobile-signup{
+        background-color: steelblue;
+        color: white;
+    }
+
+}
+

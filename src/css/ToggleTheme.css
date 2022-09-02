@@ -1,0 +1,14 @@
+.sun-icon-container, .moon-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.sun-icon-container:hover, .moon-icon-container:hover{
+    cursor: pointer;
+}
+
+.sun-icon, .moon-icon{
+    padding: 5px;
+    font-size: 20px;
+}
+
